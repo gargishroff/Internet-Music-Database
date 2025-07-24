@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playlist</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .foot{
+            margin-top: 570px;
+        }
+        body{
+            background-image: url('../static/Images/playbg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <div class = "logo">
+            <img src="../static/Images/logo.png">
+        </div>
+        <ul>
+            <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+            <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+            <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+            <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+            <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+            <li><a href="playlist.html" class="active" id="playlink">Playlist</a></li>
+        </ul>
+    </nav>
+   
+    <h1 style="color:black;text-align:center;font-family:cursive;font-weight: bolder;font-size: 80px;padding: 20px;">Listen On Loop</h1>
+    <div id="message-box" style="text-align:center;padding-bottom:20px;font-family:cursive;font-weight:bolder;color:yellow;font-size:45px"></div>
+    <script>
+      var messageBox = document.getElementById("message-box");
+      messageBox.innerHTML = "{{ message }}";
+      messageBox.style.display = "block";
+
+      setTimeout(function() {
+        messageBox.style.display = "none";
+      }, 3000)
+    </script>
+    <div style="text-align:center">
+    <table>
+        <thead>
+            <tr>
+                <th style="color:white;font-size:30px">Title</th>
+                <th style="color:white;font-size:30px">Album</th>
+                <th style="color:white;font-size:30px">Artist</th>
+                <th style="color:black;font-size:30px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+            <tr style="border: 10px solid white">
+                <td class="bouncy-text" style="text-align:center;color: white;padding:10px;font-size:20px;font-weight: bolder;">{{ song.title }}</td>
+                <td class="bouncy-text" style="text-align:center;color: white;padding:10px;font-size:20px;font-weight: bolder;">{{ song.album }}</td>
+                <td class="bouncy-text" style="text-align:center;color: white;padding:10px;font-size:20px;font-weight:bolder">{{ song.artist }}</td>
+                <td><form action="/remove_song" method="POST"><input type="hidden" name="id" value="{{ song.id }}"><button type="submit">Remove</button></form></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+
+    <style>
+        table{
+            margin:0 auto;  
+            border-collapse: separate;
+            border-spacing: 200px 0;
+        }
+        table thead tr{
+            text-align:center;
+        }
+
+
+  @keyframes wave {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1.2, 0.8);
+    }
+    50% {
+      transform: scale(0.8, 1.2);
+    }
+    75% {
+      transform: scale(1.1, 0.9);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+ .bouncy-text:hover {
+  animation: wave 0.5s ease-out;
+}
+
+ @keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+} 
+
+
+    button[type="submit"] {
+  background-color: rgb(148, 64, 82); 
+  color: white; 
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+ button[type="submit"]:hover {
+  background-color: darkred;
+}
+    
+
+    </style>
+
+    <div class="foot">
+        <div class="row">
+            <div class="col">
+                <img src="../static/Images/is.png" class="logo1">
+                <div class="social_icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                </div>
+
+            </div>
+            <div class="col" align="center">
+                <p><b>OFFICE</b></p>
+                <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+            </div>
+            <div class="col" align="right">
+                <p><b>LINKS</b></p>
+                
+                    <a href="home.html">Home</a><br>
+                    <a href="about.html">About</a>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>

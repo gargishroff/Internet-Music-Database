@@ -1,0 +1,170 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>BlackPink In Your Area Songs</title>
+            <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                .foot{
+                    margin-top: 615px;
+                }
+                body{
+                    background-image: url('../static/Images/bg2.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                }
+                button[type="submit"] {
+                background-color: rgb(90, 186, 199);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            button[type="submit"]:hover {
+                background-color: rgb(49, 50, 139);
+            }
+                </style>
+        </head>
+        <body>
+            <nav>
+                <div class = "logo">
+                    <img src="../static/Images/logo.png">
+                </div>
+                <ul>
+                    <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+                    <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+                    <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+                    <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+                    <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+                    <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+                </ul>
+            </nav>
+            <p style="font-family:cursive;color:palevioletred;margin-top: 30px;text-align: center;font-size: 60px;font-weight: bold;">BLACKPINK IN YOUR AREA</p>
+            <div class="shrink">
+            <figure>
+                <img src="../static/Images/boombayah.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 110px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:30px;margin-left: 150px;font-family: cursive;font-weight: bold;">
+                    Boombayah
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:25px;margin-left: 190px;font-family:'Times New Roman', Times, serif;">
+                    4:01<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="431">
+                    <input type="hidden" name="title" value="Boombayah">
+                    <input type="hidden" name="album" value="BlackPink In Your Arena">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:480px;position: absolute;margin-left:180px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+            <figure>
+                <img src="../static/Images/asif.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 470px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:30px;margin-left: 480px;font-family: cursive;font-weight: bold;">
+                   As If It's Your Last
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:25px;margin-left: 570px;font-family:'Times New Roman', Times, serif;">
+                    3:33
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="432">
+                    <input type="hidden" name="title" value="As If It's Your Last">
+                    <input type="hidden" name="album" value="BlackPink In Your Arena">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:480px;position: absolute;margin-left:580px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+
+            <figure>
+                <img src="../static/Images/playing.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 830px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:30px;margin-left: 830px;font-family: cursive;font-weight: bold;">
+                    Playing With Fire
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:25px;margin-left: 930px;font-family: 'Times New Roman', Times, serif;">
+                    3:17<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="433">
+                    <input type="hidden" name="title" value="Playing With Fire">
+                    <input type="hidden" name="album" value="BlackPink In Your Arena">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:480px;position: absolute;margin-left:920px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+
+
+            <figure>
+                <img src="../static/Images/seeulater.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 1190px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:30px;margin-left: 1220px;font-family: cursive;font-weight: bold;">
+                   See U Later
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:25px;margin-left: 1270px;font-family: 'Times New Roman', Times, serif;">
+                    3:19<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="434">
+                    <input type="hidden" name="title" value="See U Later">
+                    <input type="hidden" name="album" value="BlackPink In Your Arena">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:480px;position: absolute;margin-left:1260px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+                
+               
+            <figure>
+                <img src="../static/Images/whistle.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 1550px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:30px;margin-left: 1620px;font-family: cursive;font-weight: bold;">
+                    Whistle
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:25px;margin-left: 1650px;font-family: 'Times New Roman', Times, serif;">
+                    3:32<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="435">
+                    <input type="hidden" name="title" value="Whistle">
+                    <input type="hidden" name="album" value="BlackPink In Your Arena">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:480px;position: absolute;margin-left:1620px">Add To Playlist</button>   
+                </form>
+            </figure>  
+            </div>
+            
+            
+
+            <div class="foot">
+                <div class="row">
+                    <div class="col">
+                        <img src="../static/Images/is.png" class="logo1">
+                        <div class="social_icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-linkedin-square"></i>
+                        </div>
+        
+                    </div>
+                    <div class="col" align="center">
+                        <p><b>OFFICE</b></p>
+                        <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+                    </div>
+                    <div class="col" align="right">
+                        <p><b>LINKS</b></p>
+                        
+                            <a href="home.html">Home</a><br>
+                            <a href="about.html">About</a>
+                        
+                    </div>
+                </div>
+            </div>
+         <script src="../static/script.js"></script>     
+    <body>
+</html>

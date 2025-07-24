@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            height: 800px;
+            width: 100%;
+            background-image: url("../static/Images/img1_F1.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-name: ani;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        @keyframes ani {
+            0% {
+                background-image: url("../static/Images/img2_F1.png");
+            }
+
+            50% {
+                background-image: url("../static/Images/img3_F1.png");
+            }
+        }
+
+        .image {
+            height: auto;
+            position: relative;
+            width: 800px;
+        }
+
+        .one {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class = "logo">
+            <img src="../static/Images/logo.png">
+        </div>
+        <ul>
+            <li><a href="home.html" class="active" id="homelink">Home</a></li>
+            <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+            <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+            <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+            <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+            <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+        </ul>
+    </nav>
+    <div class="container1"></div>
+    <a href="#scroll-down" style="display: block; text-align: center;"><img src="../static/Images/expf.jpg" style="width:200px;" ></a>
+    <div id="scroll-down"></div>
+    <img src="../static/Images/top_artists.jpg" style="height: 700px;width:700px;margin-top:20px; position:absolute;">
+    <a href="taylor.html"><img src="../static/Images/top_ar1.png" style="height:160px; width:850px; margin-left: 700px; margin-top:80px; position: absolute;"></a>
+    <a href="chainsmokers.html"><img src="../static/Images/top_ar2.png" style="height:160px; width:950px; margin-left: 700px; margin-top:280px; position: absolute;"></a>
+    <a href="bp.html"><img src="../static/Images/top_ar3.jpeg" style="height:160px; width:1050px; margin-left: 700px; margin-top:480px; position: absolute;"></a>
+
+    <img src="../static/Images/top_albums.jpeg" style="height: 700px;width:700px;margin-top:720px; position: absolute;">
+    <a href="born_pink_bp.html"><img src="../static/Images/top_alb1.png" style="height:160px; width:850px; margin-left: 700px; margin-top:780px; position: absolute;"></a>
+    <a href="lover_ts.html"><img src="../static/Images/top_alb2.png" style="height:160px; width:950px; margin-left: 700px; margin-top:980px; position: absolute;"></a>
+    <a href="divide_es.html"><img src="../static/Images/top_alb3.png" style="height:160px; width:1050px; margin-left: 700px; margin-top:1180px; position: absolute;"></a>
+
+    <img src="../static/Images/top_songs.jpeg" style="height: 700px;width:700px;margin-top:1420px; position:absolute;">
+    <a href="fearless._ts.html"><img src="../static/Images/top_song2.png" style="height:160px; width:850px; margin-left: 700px; margin-top:1480px; position: absolute;"></a>
+    <a href="divide_es.html"><img src="../static/Images/top_song1.png" style="height:160px; width:950px; margin-left: 700px; margin-top:1680px; position: absolute;"></a>
+    <a href="life_avici.html"><img src="../static/Images/top_song3.png" style="height:160px; width:1050px; margin-left: 700px; margin-top:1880px;position: relative;"></a>
+
+    <div class="foot">
+        <div class="row">
+            <div class="col">
+                <img src="../static/Images/is.png" class="logo1">
+                <div class="social_icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                </div>
+
+            </div>
+            <div class="col" align="center">
+                <p><b>OFFICE</b></p>
+                <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+            </div>
+            <div class="col" align="right">
+                <p><b>LINKS</b></p>
+                
+                    <a href="home.html">Home</a><br>
+                    <a href="about.html">About</a>
+                
+            </div>
+        </div>
+    </div>
+<script src="../static/script.js"></script>
+</body>
+</html>

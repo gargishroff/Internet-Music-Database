@@ -1,0 +1,181 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <title>Midnights Songs</title>
+        <link rel="stylesheet" href="../static/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .foot {
+                margin-top: 615px;
+            }
+
+            body {
+                background-image: url('../static/Images/bg2.jpeg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            button[type="submit"] {
+                background-color: rgb(90, 186, 199);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            button[type="submit"]:hover {
+                background-color: rgb(49, 50, 139);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="../static/Images/logo.png">
+            </div>
+            <ul>
+                <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+                <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+                <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+                <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+                <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+                <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+            </ul>
+        </nav>
+        <p
+            style="font-family:cursive;color:wheat;margin-top: 30px;text-align: center;font-size: 60px;font-weight: bold;">
+            MIDNIGHTS</p>
+
+        <div class="shrink">
+            <figure>
+                <img src="../static/Images/snow_on_beach.jpg" height="350px" width="250px"
+                    style="position:absolute; top: 250px; left: 110px;">
+            </figure>
+
+            <figure>
+                <img src="../static/Images/bigger_sky.jpg" height="350px" width="250px"
+                    style="position:absolute; top: 250px; left: 470px;">
+            </figure>
+
+
+            <figure>
+                <img src="../static/Images/sweet_nothing.jpg" height="350px" width="250px"
+                    style="position:absolute; top: 250px; left: 830px;">
+            </figure>
+
+            <figure>
+                <img src="../static/Images/Question.jpeg" height="350px" width="250px"
+                    style="position:absolute; top: 250px; left: 1190px;">
+            </figure>
+
+            <figure>
+                <img src="../static/Images/labyrinth.jpeg" height="350px" width="250px"
+                    style="position:absolute; top: 250px; left: 1550px;">
+            </figure>
+
+            <p
+                style="position:absolute;font-family: cursive;margin-left:110px;margin-top:400px;color:white;font-size: 30px;">
+                Snow On The Beach</p>
+            <p
+                style="position:absolute;font-family: cursive;margin-left:470px;margin-top:400px;color:white;font-size: 30px;">
+                Bigger Than The</p>
+            <p
+                style="position:absolute;font-family: cursive;margin-left:470px;margin-top:450px;color:white;font-size: 30px;">
+                Whole Sky</p>
+            <p
+                style="position:absolute;font-family: cursive;margin-left:830px;margin-top:400px;color:white;font-size: 30px;">
+                Sweet Nothing</p>
+            <p
+                style="position:absolute;font-family: cursive;margin-left:1190px;margin-top:400px;color:white;font-size: 30px;">
+                Question...?</p>
+            <p
+                style="position:absolute;font-family: cursive;margin-left:1550px;margin-top:400px;color:white;font-size: 30px;">
+                Labyrinth</p>
+
+
+            <p style="position:absolute;margin-left:110px;margin-top:450px;color:white;font-size: 25px;">4:16</p>
+            <p style="position:absolute;margin-left:470px;margin-top:480px;color:white;font-size: 25px;">3:43</p>
+            <p style="position:absolute;margin-left:830px;margin-top:450px;color:white;font-size: 25px;">3:08</p>
+            <p style="position:absolute;margin-left:1190px;margin-top:450px;color:white;font-size: 25px;">3:34</p>
+            <p style="position:absolute;margin-left:1550px;margin-top:450px;color:white;font-size: 25px;">4:08</p>
+        </div>
+
+        <form id="add" action='/add_to_playlist' method="POST">
+            <input type="hidden" name="id" value="211">
+            <input type="hidden" name="title" value="Snow On The Beach">
+            <input type="hidden" name="album" value="Midnights">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <button type="submit" style="margin-top:500px;position: absolute;margin-left:180px">Add To Playlist</button>
+        </form>
+
+        <form id="add" action='/add_to_playlist' method="POST">
+            <input type="hidden" name="id" value="212">
+            <input type="hidden" name="title" value="Bigger Than The Whole Sky">
+            <input type="hidden" name="album" value="Midnights">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <button type="submit" style="margin-top:500px;position: absolute;margin-left:580px">Add To Playlist</button>
+        </form>
+
+        <form id="add" action='/add_to_playlist' method="POST">
+            <input type="hidden" name="id" value="213">
+            <input type="hidden" name="title" value="Sweet Nothing">
+            <input type="hidden" name="album" value="Midnights">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <button type="submit" style="margin-top:500px;position: absolute;margin-left:920px">Add To Playlist</button>
+        </form>
+
+        <form id="add" action='/add_to_playlist' method="POST">
+            <input type="hidden" name="id" value="214">
+            <input type="hidden" name="title" value="Question..?">
+            <input type="hidden" name="album" value="Midnights">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <button type="submit" style="margin-top:500px;position: absolute;margin-left:1260px">Add To
+                Playlist</button>
+        </form>
+
+        <form id="add" action='/add_to_playlist' method="POST">
+            <input type="hidden" name="id" value="215">
+            <input type="hidden" name="title" value="Labyrinth">
+            <input type="hidden" name="album" value="Midnights">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <button type="submit" style="margin-top:500px;position: absolute;margin-left:1620px">Add To
+                Playlist</button>
+        </form>
+
+        <div class="foot">
+            <div class="row">
+                <div class="col">
+                    <img src="../static/Images/is.png" class="logo1">
+                    <div class="social_icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                    </div>
+
+                </div>
+                <div class="col" align="center">
+                    <p><b>OFFICE</b></p>
+                    <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+                </div>
+                <div class="col" align="right">
+                    <p><b>LINKS</b></p>
+
+                    <a href="home.html">Home</a><br>
+                    <a href="about.html">About</a>
+
+                </div>
+            </div>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+
+    </html>

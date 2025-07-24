@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotlight Page</title>
+    <link rel="stylesheet" href="../static/spotlight.css">
+    <link rel="stylesheet" href="../static/index.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background: linear-gradient(grey, black);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../static/Images/logo.png">
+        </div>
+        <ul>
+            <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+            <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+            <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+            <li><a href="spotlight.html" class="active" id="spotlink">Artist Spotlight</a></li>
+            <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+            <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+        </ul>
+    </nav>
+    <!-- <div id="splash-screen">
+        <h1><pre style="font-family: cursive;">
+    iShapers Choice - 
+            TAYLOR SWIFT
+        </pre></h1>
+    </div> -->
+
+    <!-- <div id="contents">
+        <p style="font-family:cursive;font-size:40px;text-align: center;">iShapers' Choice</p>
+        <img src="Images/ts.jpeg" style="height:400px;width:400px;float:left;text-align: center;margin-top: 10%;">
+
+    </div> -->
+    <div class="cont1">
+        <p style="font-size: 100px; font-family: monospace; color:rgb(233, 85, 114)"> TAYLOR SWIFT </p>
+        <p style="font-size:40px; font-family:cursive; color:navajowhite; margin-left:300px;"> American Singer,
+            Songwriter</p>
+    </div>
+    <div class="cont2">
+        <pre style="text-align:center;font-family: cursive;font-size:24px">                   
+
+    Taylor Swift is a multi-platinum, Grammy Award-winning singer-songwriter
+    who has become one of the most successful and beloved artists of her generation. 
+    Known for her personal and relatable songwriting, Swift has released numerous 
+    chart-topping albums and singles throughout her career. From her early country 
+    roots to her more recent pop sound, Swift has continually pushed boundaries 
+    and evolved her style, all while remaining true to her authentic voice. 
+    With a devoted fan base and countless accolades, including numerous 
+    Billboard Music Awards and American Music Awards, 
+    Swift is a true icon of the music industry.</pre>
+    </div>
+
+    <div class="cont3">
+        <div>
+            <p style="font-size:40px; font-weight:bold; font-family:cursive; margin-left:40px; margin-top:10px;">Share your opinions about our Spotlight Artist</p>
+            <label for="reviewer-name" style="margin-top:20px; margin-left:40px; font-size:20px">Reveiwer's Name :</label>
+            <input type="text" id="reviewer-name" style="margin-top:20px; margin-left:10px; height:25px">
+        </div>
+        <div>
+            <p style="margin-top:20px; margin-left:40px; font-size:20px">Ratings :</p>
+            <input type="radio" id="star-1" name="rating" value="1" style="margin-top:7px; margin-left:40px">
+            <label for="star-1" style="margin-top:7px;">1</label>
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2">2</label>
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3">3</label>
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4">4</label>
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5">5</label>
+        </div>
+        <div>
+            <br>
+            <label for="review" style="margin-left:40px; font-size:20px">Review:</label>
+            <br>
+            <textarea id="review" style="margin-left:40px; font-size:15px"></textarea>
+        </div>
+        <button onclick="submitReview()"  style="margin-left:40px; font-size:15px; margin-top: 10px;">Submit Review</button>
+        <table style="margin-left:40px">
+            <thead>
+                <tr>
+                    <th>Reviewer's Name</th>
+                    <th style="padding:20px">Rating</th>
+                    <th> Review</th>
+                </tr>
+            </thead>
+            <tbody id="review-table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="timer">
+        <span id="days" style="font-size:50px; margin-left: 250px; color:rgb(233, 98, 20)"></span> :
+        <span id="hours" style="font-size:50px; margin-left:10px; color:rgb(245, 146, 66)"></span> :
+        <span id="minutes" style="font-size:50px; margin-left: 10px; color:rgb(245, 199, 75)"></span> :
+        <span id="seconds" style="font-size:50px; margin-left: 10px; color:rgb(211, 241, 77)"></span>
+        <p style="font-size:20px; margin-left: 260px;">DAYS</p>
+        <p style="font-size:20px; margin-left:375px; margin-top:-23px">HOURS</p>
+        <p style="font-size:20px; margin-left:500px; margin-top:-23px">MINUTES</p>
+        <p style="font-size:20px; margin-left:630px; margin-top:-23px">SECONDS</p>
+        <p style="font-family:cursive; font-size: 20px; margin-top: -80px; color:tan">
+  With each passing second, <br>
+  The countdown timer ticks away, <br>
+  Anticipating the arrival of <br>
+  Taylor Swift's next musical display. <br>
+        </p>
+    </div>
+
+    <a href="taylor.html"><img src="../static/Images/ts1.jpg" id="image"
+        style="margin-left: 50px; margin-top: -1150px;"></a>
+
+    <div class="foot">
+        <div class="row">
+            <div class="col">
+                <img src="../static/Images/is.png" class="logo1">
+                <div class="social_icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                </div>
+
+            </div>
+            <div class="col" align="center">
+                <p><b>OFFICE</b></p>
+                <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+            </div>
+            <div class="col" align="right">
+                <p><b>LINKS</b></p>
+
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About</a>
+
+            </div>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+    <script src="../static/spotlight.js"></script>
+</body>
+
+</html>

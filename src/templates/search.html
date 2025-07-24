@@ -1,0 +1,122 @@
+  
+<!DOCTYPE html>
+<head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="../static/search.css">
+    <link rel="stylesheet" href="../static/index.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background: linear-gradient(black,#012733);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class = "logo">
+            <img src="../static/Images/logo.png">
+        </div>
+        <ul>
+            <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+            <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+            <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+            <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+            <li><a href="search.html" class="active" id="searchlink">Search</a></li>
+            <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+        </ul>
+    </nav>
+<form id="search-form">
+    <label for="search-input" style="font-size: 40px; font-family: sans-serif;"><img src="../static/Images/logo.png" style="height:60px; margin-top: 10px;"></label>
+    <input type="text" id="search-input" name="q" placeholder="What do you want to listen today..." style="font-family: cursive; font-size: larger; font-weight: bold;">
+    <button type="submit" style="height:50px; width:90px; margin-top: 13px; margin-right: 20px;background: linear-gradient(rgb(85, 236, 201),rgb(30, 180, 173));font-weight: bolder;font-size: 17px;">Search</button>
+  </form>
+
+<!-- <div id="sort"> -->
+  <!-- <label for="filter" style="color:black;font-size:large;font-weight: bolder;">Filter By:</label> -->
+<!-- <select id="filter">
+  <option value="">Select Filter</option>
+  <option value="duration">Duration</option>
+  <option value="explicitness">Explicitness</option>
+</select> -->
+<div class="filter">
+<form id="duration-filter" style="display:none;">
+  <label for="max-duration">Max Duration:</label>
+  <input type="number" step="0.01" id="max-duration">
+  <!-- <button type="submit">Go...</button> -->
+</form>
+<form id="explicitness-filter" style="display:none;">
+  <label for="explicitness">Explicitness:</label>
+  <select id="explicitness">
+    <option value="">Select Option</option>
+    <option value="explicit">Explicit</option>
+    <option value="notExplicit">Not Explicit</option>
+  </select>
+  <button type="submit">Go...</button>
+</form>
+<button id="clear">Clear</button>
+
+
+</div>
+
+<!-- </div> -->
+
+<!-- <div id="sort">
+    <label for="filters" style="color:black;font-size:large;font-weight: bolder;">Filter By:</label>
+    <form id="filters">
+      <label for="duration">Duration:</label>
+      <input type="checkbox" id="duration" name="filters" value="duration">
+      <label for="explicitness">Explicitness:</label>
+      <input type="checkbox" id="explicitness" name="filters" value="explicitness">
+    </form>
+    <form id="duration-filter" style="display:none;">
+      <label for="max-duration">Max Duration:</label>
+      <input type="number" id="max-duration">
+      <button type="submit">Go...</button>
+    </form>
+    <form id="explicitness-filter" style="display:none;">
+      <label for="explicit">Explicit:</label>
+      <input type="checkbox" id="explicit" name="explicitness" value="explicit">
+      <label for="not-explicit">Not Explicit:</label>
+      <input type="checkbox" id="not-explicit" name="explicitness" value="notExplicit">
+      <button type="submit">Go...</button>
+    </form>
+  </div> -->
+  
+
+  <ul id="search-results"></ul>
+
+  <div class="foot" style="margin-top: 580px;">
+    <div class="row">
+        <div class="col">
+            <img src="../static/Images/is.png" class="logo1">
+            <div class="social_icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-linkedin-square"></i>
+            </div>
+
+        </div>
+        <div class="col" align="center">
+            <p><b>OFFICE</b></p>
+            <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+        </div>
+        <div class="col" align="right">
+            <p><b>LINKS</b></p>
+            
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About</a>
+            
+        </div>
+    </div>
+</div>
+<script src="../static/script.js"></script>
+<script src="../static/search.js"></script>
+</body>
+</html>
+  

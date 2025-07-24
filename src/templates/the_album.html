@@ -1,0 +1,170 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>The Album Songs</title>
+            <link rel="stylesheet" href="../static/index.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                .foot{
+                    margin-top:615px;
+                }
+                body{
+                    background-image: url('../static/Images/bg2.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                }
+                button[type="submit"] {
+                background-color: rgb(90, 186, 199);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            button[type="submit"]:hover {
+                background-color: rgb(49, 50, 139);
+            }
+                </style>
+        </head>
+        <body>
+            <nav>
+                <div class = "logo">
+                    <img src="../static/Images/logo.png">
+                </div>
+                <ul>
+                    <li><a href="home.html" class="inactive" id="homelink">Home</a></li>
+                    <li><a href="artist.html" class="inactive" id="artistlink">The Artists</a></li>
+                    <li><a href="about.html" class="inactive" id="aboutlink">About</a></li>
+                    <li><a href="spotlight.html" class="inactive" id="spotlink">Artist Spotlight</a></li>
+                    <li><a href="search.html" class="inactive" id="searchlink">Search</a></li>
+                    <li><a href="playlist.html" class="inactive" id="playlink">Playlist</a></li>
+                </ul>
+            </nav>
+            <p style="font-family:cursive;color:palevioletred;margin-top: 30px;text-align: center;font-size: 60px;font-weight: bold;">THE ALBUM</p>
+            
+            <div class="shrink">
+            <figure>
+                <img src="../static/Images/icecream.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 110px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:40px;margin-left: 110px;font-family: cursive;font-weight: bold;">
+                    Icecream
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:30px;margin-left: 150px;font-family:'Times New Roman', Times, serif;">
+                    2:56<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="411">
+                    <input type="hidden" name="title" value="Icecream">
+                    <input type="hidden" name="album" value="The Album">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:500px;position: absolute;margin-left:180px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+            <figure>
+                <img src="../static/Images/bet.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 470px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:40px;margin-left: 470px;font-family: cursive;font-weight: bold;">
+                   Bet You Wanna
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:30px;margin-left: 550px;font-family:'Times New Roman', Times, serif;">
+                    2:39
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="412">
+                    <input type="hidden" name="title" value="Bet You Wannna">
+                    <input type="hidden" name="album" value="The Album">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:500px;position: absolute;margin-left:580px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+
+            <figure>
+                <img src="../static/Images/crazy.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 830px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:40px;margin-left: 830px;font-family: cursive;font-weight: bold;">
+                    Crazy Over You
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:30px;margin-left: 920px;font-family: 'Times New Roman', Times, serif;">
+                    2:42<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="413">
+                    <input type="hidden" name="title" value="Crazy Over You">
+                    <input type="hidden" name="album" value="The Album">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:500px;position: absolute;margin-left:920px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+
+
+            <figure>
+                <img src="../static/Images/savage.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 1190px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:40px;margin-left: 1190px;font-family: cursive;font-weight: bold;">
+                   Pretty Savage
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:30px;margin-left: 1270px;font-family: 'Times New Roman', Times, serif;">
+                    3:19<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="414">
+                    <input type="hidden" name="title" value="Pretty Savage">
+                    <input type="hidden" name="album" value="The Albums">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:500px;position: absolute;margin-left:1260px">Add To Playlist</button>   
+                </form>
+            </figure>
+
+                
+               
+            <figure>
+                <img src="../static/Images/love_to_hate_me.jpeg" height="350px" width="250px" style="position:absolute; top: 250px; left: 1550px;">
+                <figcaption style="position:absolute;margin-top:400px;color:white;font-size:40px;margin-left: 1550px;font-family: cursive;font-weight: bold;">
+                    Love To
+                    Hate Me
+                </figcaption>
+                <figcaption style="position:absolute;margin-top:450px;color:white;font-size:30px;margin-left: 1670px;font-family: 'Times New Roman', Times, serif;">
+                    2:50<br>
+                </figcaption>
+                <form id="add" action='/add_to_playlist' method="POST">
+                    <input type="hidden" name="id" value="415">
+                    <input type="hidden" name="title" value="Love To Hate Me">
+                    <input type="hidden" name="album" value="The Albums">
+                    <input type="hidden" name="artist" value="BlackPink">
+                    <button type="submit" style="margin-top:500px;position: absolute;margin-left:1620px">Add To Playlist</button>   
+                </form>
+            </figure>
+            </div>
+
+            <div class="foot">
+                <div class="row">
+                    <div class="col">
+                        <img src="../static/Images/is.png" class="logo1">
+                        <div class="social_icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-linkedin-square"></i>
+                        </div>
+        
+                    </div>
+                    <div class="col" align="center">
+                        <p><b>OFFICE</b></p>
+                        <p>International Institute of Information Technology, Gachibowli, Hyderabad - 500032</p>
+                    </div>
+                    <div class="col" align="right">
+                        <p><b>LINKS</b></p>
+                        
+                            <a href="home.html">Home</a><br>
+                            <a href="about.html">About</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <script src="../static/script.js"></script>
+        </body>
+    </html>
